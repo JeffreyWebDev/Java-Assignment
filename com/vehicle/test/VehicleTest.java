@@ -5,22 +5,21 @@ import com.vehicle.ElectricCar;
 
 public class VehicleTest {
     public static void main(String[] args) {
-        // Create instances of Car and ElectricCar
+        // Creation of instances of Car and ElectricCar
         Car car = new Car();
         ElectricCar electricCar = new ElectricCar();
 
-        // Initialize the cars using setSpeed and setFuelLevel
-        car.setSpeed(120);  // 120 km/h
-        car.setFuelLevel(80);  // 80% fuel
-        electricCar.setSpeed(100);  // 100 km/h
-        electricCar.setFuelLevel(90);  // 90% fuel
-        electricCar.setBatteryLevel(100);  // 100% battery
+        // Initialization of the cars using setSpeed and setFuelLevel
+        car.setSpeed(120);  
+        car.setFuelLevel(80);
+        electricCar.setSpeed(100);
+        electricCar.setFuelLevel(90); 
+        electricCar.setBatteryLevel(100); 
 
-        // Simulate driving both cars
-        car.drive(50000);  // Drive 50 kilometers
-        electricCar.drive(30000);  // Drive 30 kilometers
+        // Simulation of driving both cars
+        car.drive(50000); 
+        electricCar.drive(30000);
 
-        // Display information for the car
         System.out.println("Car speed in mph: " + car.getSpeedMph());
         System.out.println("Car distance in kilometers: " + car.getDistanceKm());
         System.out.println("Car remaining fuel: " + car.calculateRemainingFuel(50));
